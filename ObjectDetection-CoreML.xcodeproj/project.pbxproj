@@ -18,8 +18,8 @@
 		558918ED2208218800F182BA /* DrawingBoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558918EC2208218800F182BA /* DrawingBoundingBoxView.swift */; };
 		558918EF22089FFE00F182BA /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558918EE22089FFE00F182BA /* Measure.swift */; };
 		AE91F7F42B6A0FA000BEC1F6 /* head_yolov5.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = AE91F7F32B6A0FA000BEC1F6 /* head_yolov5.mlpackage */; };
-		AE91F8422B6A42E000BEC1F6 /* yolov8n.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = AE91F8412B6A42E000BEC1F6 /* yolov8n.mlpackage */; };
-		AE91F8442B6A44FC00BEC1F6 /* 30jan_model.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = AE91F8432B6A44FC00BEC1F6 /* 30jan_model.mlpackage */; };
+		AE91F8482B6A47FA00BEC1F6 /* yolov8n.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = AE91F8472B6A47FA00BEC1F6 /* yolov8n.mlpackage */; };
+		AE91F84A2B6A485100BEC1F6 /* 30jan_model.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = AE91F8492B6A485100BEC1F6 /* 30jan_model.mlpackage */; };
 		C427E6B228C5D85B001279AD /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553366CE220489DD00A67647 /* UIImage+CVPixelBuffer.swift */; };
 		C427E6C928C5DAF3001279AD /* IMG_8564.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C427E6C828C5DAF3001279AD /* IMG_8564.JPG */; };
 /* End PBXBuildFile section */
@@ -50,8 +50,8 @@
 		558918EC2208218800F182BA /* DrawingBoundingBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoundingBoxView.swift; sourceTree = "<group>"; };
 		558918EE22089FFE00F182BA /* Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
 		AE91F7F32B6A0FA000BEC1F6 /* head_yolov5.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = head_yolov5.mlpackage; sourceTree = "<group>"; };
-		AE91F8412B6A42E000BEC1F6 /* yolov8n.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8n.mlpackage; sourceTree = "<group>"; };
-		AE91F8432B6A44FC00BEC1F6 /* 30jan_model.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = 30jan_model.mlpackage; sourceTree = "<group>"; };
+		AE91F8472B6A47FA00BEC1F6 /* yolov8n.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8n.mlpackage; sourceTree = "<group>"; };
+		AE91F8492B6A485100BEC1F6 /* 30jan_model.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = 30jan_model.mlpackage; sourceTree = "<group>"; };
 		C427E6C828C5DAF3001279AD /* IMG_8564.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8564.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,8 +120,8 @@
 		71B8322222E2B0B200207D05 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AE91F8432B6A44FC00BEC1F6 /* 30jan_model.mlpackage */,
-				AE91F8412B6A42E000BEC1F6 /* yolov8n.mlpackage */,
+				AE91F8492B6A485100BEC1F6 /* 30jan_model.mlpackage */,
+				AE91F8472B6A47FA00BEC1F6 /* yolov8n.mlpackage */,
 				AE91F7F32B6A0FA000BEC1F6 /* head_yolov5.mlpackage */,
 			);
 			path = Model;
@@ -249,14 +249,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				554F149E220362AB00B828B0 /* ViewController.swift in Sources */,
+				AE91F8482B6A47FA00BEC1F6 /* yolov8n.mlpackage in Sources */,
 				AE91F7F42B6A0FA000BEC1F6 /* head_yolov5.mlpackage in Sources */,
 				558918EF22089FFE00F182BA /* Measure.swift in Sources */,
-				AE91F8422B6A42E000BEC1F6 /* yolov8n.mlpackage in Sources */,
 				558918ED2208218800F182BA /* DrawingBoundingBoxView.swift in Sources */,
 				553366CF220489DD00A67647 /* UIImage+CVPixelBuffer.swift in Sources */,
 				554F14AE220362DA00B828B0 /* VideoCapture.swift in Sources */,
 				554F149C220362AB00B828B0 /* AppDelegate.swift in Sources */,
-				AE91F8442B6A44FC00BEC1F6 /* 30jan_model.mlpackage in Sources */,
+				AE91F84A2B6A485100BEC1F6 /* 30jan_model.mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
