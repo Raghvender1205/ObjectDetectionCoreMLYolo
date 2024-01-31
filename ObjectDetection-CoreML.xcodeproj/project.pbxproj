@@ -17,9 +17,11 @@
 		554F14AE220362DA00B828B0 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F14AD220362DA00B828B0 /* VideoCapture.swift */; };
 		558918ED2208218800F182BA /* DrawingBoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558918EC2208218800F182BA /* DrawingBoundingBoxView.swift */; };
 		558918EF22089FFE00F182BA /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558918EE22089FFE00F182BA /* Measure.swift */; };
+		AE91F7F42B6A0FA000BEC1F6 /* head_yolov5.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = AE91F7F32B6A0FA000BEC1F6 /* head_yolov5.mlpackage */; };
+		AE91F8422B6A42E000BEC1F6 /* yolov8n.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = AE91F8412B6A42E000BEC1F6 /* yolov8n.mlpackage */; };
+		AE91F8442B6A44FC00BEC1F6 /* 30jan_model.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = AE91F8432B6A44FC00BEC1F6 /* 30jan_model.mlpackage */; };
 		C427E6B228C5D85B001279AD /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553366CE220489DD00A67647 /* UIImage+CVPixelBuffer.swift */; };
 		C427E6C928C5DAF3001279AD /* IMG_8564.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C427E6C828C5DAF3001279AD /* IMG_8564.JPG */; };
-		C4946DCA29E0D3DB00DC0E3C /* yolov8s.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = C4946DC629E0D3DA00DC0E3C /* yolov8s.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +49,10 @@
 		554F14AD220362DA00B828B0 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		558918EC2208218800F182BA /* DrawingBoundingBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoundingBoxView.swift; sourceTree = "<group>"; };
 		558918EE22089FFE00F182BA /* Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		AE91F7F32B6A0FA000BEC1F6 /* head_yolov5.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = head_yolov5.mlpackage; sourceTree = "<group>"; };
+		AE91F8412B6A42E000BEC1F6 /* yolov8n.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8n.mlpackage; sourceTree = "<group>"; };
+		AE91F8432B6A44FC00BEC1F6 /* 30jan_model.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = 30jan_model.mlpackage; sourceTree = "<group>"; };
 		C427E6C828C5DAF3001279AD /* IMG_8564.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8564.JPG; sourceTree = "<group>"; };
-		C4946DC629E0D3DA00DC0E3C /* yolov8s.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8s.mlpackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +108,8 @@
 				554F149B220362AB00B828B0 /* AppDelegate.swift */,
 				554F149D220362AB00B828B0 /* ViewController.swift */,
 				558918EC2208218800F182BA /* DrawingBoundingBoxView.swift */,
-				71B8322322E2B0BC00207D05 /* ultils */,
-				71B8322222E2B0B200207D05 /* mlmodel */,
+				71B8322322E2B0BC00207D05 /* Utils */,
+				71B8322222E2B0B200207D05 /* Model */,
 				554F14A2220362AC00B828B0 /* Assets.xcassets */,
 				554F14A4220362AC00B828B0 /* LaunchScreen.storyboard */,
 				554F14A7220362AC00B828B0 /* Info.plist */,
@@ -113,22 +117,24 @@
 			path = "ObjectDetection-CoreML";
 			sourceTree = "<group>";
 		};
-		71B8322222E2B0B200207D05 /* mlmodel */ = {
+		71B8322222E2B0B200207D05 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C4946DC629E0D3DA00DC0E3C /* yolov8s.mlpackage */,
+				AE91F8432B6A44FC00BEC1F6 /* 30jan_model.mlpackage */,
+				AE91F8412B6A42E000BEC1F6 /* yolov8n.mlpackage */,
+				AE91F7F32B6A0FA000BEC1F6 /* head_yolov5.mlpackage */,
 			);
-			path = mlmodel;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		71B8322322E2B0BC00207D05 /* ultils */ = {
+		71B8322322E2B0BC00207D05 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				554F14AD220362DA00B828B0 /* VideoCapture.swift */,
 				558918EE22089FFE00F182BA /* Measure.swift */,
 				553366CE220489DD00A67647 /* UIImage+CVPixelBuffer.swift */,
 			);
-			path = ultils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,12 +249,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				554F149E220362AB00B828B0 /* ViewController.swift in Sources */,
+				AE91F7F42B6A0FA000BEC1F6 /* head_yolov5.mlpackage in Sources */,
 				558918EF22089FFE00F182BA /* Measure.swift in Sources */,
+				AE91F8422B6A42E000BEC1F6 /* yolov8n.mlpackage in Sources */,
 				558918ED2208218800F182BA /* DrawingBoundingBoxView.swift in Sources */,
-				C4946DCA29E0D3DB00DC0E3C /* yolov8s.mlpackage in Sources */,
 				553366CF220489DD00A67647 /* UIImage+CVPixelBuffer.swift in Sources */,
 				554F14AE220362DA00B828B0 /* VideoCapture.swift in Sources */,
 				554F149C220362AB00B828B0 /* AppDelegate.swift in Sources */,
+				AE91F8442B6A44FC00BEC1F6 /* 30jan_model.mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,15 +451,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
+				DEVELOPMENT_TEAM = Z3DLKU8STL;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "ObjectDetection-CoreML/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tucan9389.ObjectDetection-CoreML";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rc.ObjectDetection-CoreML";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -463,14 +471,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
+				DEVELOPMENT_TEAM = Z3DLKU8STL;
 				INFOPLIST_FILE = "ObjectDetection-CoreML/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tucan9389.ObjectDetection-CoreML";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rc.ObjectDetection-CoreML";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
